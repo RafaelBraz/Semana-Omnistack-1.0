@@ -20,6 +20,6 @@
         <br>&emsp; - Cadastrar casos
         <br>&emsp; - Deletar casos
         <br>&emsp; - Listar casos específicos de uma ONG
-    <br>Mobile:
+    <br>&emsp;Mobile:
         <br>&emsp; - Listar todos os casos
         <br>&emsp; - Entrar em contato com a ONG
