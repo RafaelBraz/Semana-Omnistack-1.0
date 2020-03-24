@@ -1,0 +1,21 @@
+{
+  "name": "Semana-Omnistack-1.0",
+  "version": "1.0.0",
+  "description": "Semana Omnistack 11.0 (23/03/2020 - 27/03/2020) - Rocketseat",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.20.13",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
