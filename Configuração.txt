@@ -1,0 +1,15 @@
+ - instalações:
+	cinst node-lts
+
+ - criação de projeto:
+	npm init -y
+	npm install express
+	npx create-react-app frontend
+
+ - frontend:
+	npm install react-icons
+	npm install react-router-dom
+
+ - observações:
+	NPM gerencia os pacotes (instala)
+	NPX executa os pacotes (só executa, exemplo, create-react-app n precisa ser instalado, só usado)
