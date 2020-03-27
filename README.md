@@ -6,7 +6,7 @@
     <br>&emsp; - Query Builder: KNEX.js
     <br>&emsp; - Back-end: Node.js
     <br>&emsp; - Front-end: React
-    <br>&emsp; - Mobile: React Native
+    <br>&emsp; - Mobile: React Native (Utilizando o Expo)
 
  Entidades:
     <br>&emsp; - ONG
