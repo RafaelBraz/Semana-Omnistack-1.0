@@ -15,6 +15,7 @@ export default function NewIncident() {
 
     const history = useHistory();
 
+    // Adquire a variável 'ongId' salva no browser do cliente
     const ongId = localStorage.getItem('ongId');
 
     async function handleNewIncident(event) {

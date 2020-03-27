@@ -2,9 +2,9 @@
  Semana Omnistack 11.0 (23/03/2020 - 27/03/2020) - Rocketseat
 
  Tecnologias:
-    <br>&emsp; - Back-end: Node.js
     <br>&emsp; - SGDB: SQLite
     <br>&emsp; - Query Builder: KNEX.js
+    <br>&emsp; - Back-end: Node.js
     <br>&emsp; - Front-end: React
     <br>&emsp; - Mobile: React Native
 

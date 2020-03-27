@@ -1,7 +1,7 @@
 // Importa o express
 const express = require('express');
 const cors = require('cors');
-
+const { errors } = require('celebrate');
 const routes = require('./routes'); // './' Demonstra que é um arquivo passando o caminho relativo
 
 // Inicializa o express
@@ -21,11 +21,14 @@ app.use(cors());
 // Informa ao express que nas requisições serão usados JSONs
 app.use(express.json());
 
-//
+// Configura as rotas da aplicação
 app.use(routes);
 
-// Informa a porta que será alocada para a aplicação
-app.listen(3333);
+// Trata os erros referentes à validação das requisições
+app.use(errors());
+
+// Exporta o app
+module.exports = app;
 
 /**
  * Rota / Recurso

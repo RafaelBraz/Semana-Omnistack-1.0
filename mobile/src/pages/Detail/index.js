@@ -9,16 +9,26 @@ import logoImg from '../../assets/logo.png';
 import styles from './styles';
 
 export default function Detail() {
+
+    // É o relativo ao useHistory do ReactJS
     const navigation = useNavigation();
+    
+    /**
+     * Funcionalidade que traz as informações que transitam entre as
+     * rotas da aplicação. É utilizado para aquisição das propriedades
+     * passadas pela tela anterior.
+     */ 
     const route = useRoute();
 
     const incident = route.params.incident;
     const message = `Olá ${incident.name}, estou entrando em contato pois gostaria de ajudar no caso ${incident.title} com o valor de ${Intl.NumberFormat('pr-BR', { style: 'currency', currency: 'BRL' }).format(incident.value)}.`;
 
+    // Redireciona para a página anterior no histórico de navegação
     function navigateBack() {
         navigation.goBack();
     }
 
+    // Automatiza o processo de envio de email
     function sendMail() {
         MailComposer.composeAsync({
             subject: `Herói do caso: ${incident.title}`,
@@ -27,7 +37,10 @@ export default function Detail() {
         });
     }
  
+    // Automatiza o processo de envio de mensagem pelo whatsapp
     function sendWhatsapp() {
+        // Linking é uma funcionalidade NATIVA do mobile que referencia
+        // as aplicações instalada no dispositivo como se fossem URLs da internet
         Linking.openURL(`whatsapp://send?phone=${incident.whatsapp}&text=${message}`);
     }
 

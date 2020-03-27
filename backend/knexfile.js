@@ -13,6 +13,19 @@ module.exports = {
     useNullAsDefault: true
   },
 
+  // Foi criado um banco de dados exclusivamente
+  // para execução de testes automatizados
+  test: {
+    client: 'sqlite3',
+    connection: {
+      filename: './src/database/test.sqlite'
+    },
+    migrations: {
+      directory: './src/database/migrations'
+    },
+    useNullAsDefault: true
+  },
+
   staging: {
     client: 'postgresql',
     connection: {

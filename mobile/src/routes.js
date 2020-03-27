@@ -11,6 +11,7 @@ export default function Routes() {
     return (
         <NavigationContainer>
             
+            {/* headerShown desabilita o cabeçalho padrão das aplicações mobile */}
             <AppStack.Navigator screenOptions={{ headerShown: false }}>
                 <AppStack.Screen name="Incidents" component={Incidents} />
                 <AppStack.Screen name="Detail" component={Detail} />

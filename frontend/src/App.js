@@ -12,4 +12,3 @@ function App() {
 export default App;
 
 // JSX (Javascript e XML)
-// useState retorna um array [valor, função de atualização]
